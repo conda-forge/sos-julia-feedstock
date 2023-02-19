@@ -1,5 +1,5 @@
 {% set name = "sos-julia" %}
-{% set version = "0.18.5" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2c67e0d18f54eaeebaaf11537b03d753206711debaf04c7c1673ecd3ae962bc
+  sha256: 1ff4e40f1cfc25682dba797865a010403ba38d155e3f093cf9f4565b55de2aab
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
