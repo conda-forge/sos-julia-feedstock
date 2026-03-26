@@ -1,18 +1,18 @@
 schema_version: 1
 
 context:
-  version: 0.20.0
+  version: "0.20.1"
 
 package:
   name: sos-julia
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/sos-julia/sos-julia-${{ version }}.tar.gz
-  sha256: 1ff4e40f1cfc25682dba797865a010403ba38d155e3f093cf9f4565b55de2aab
+  url: https://pypi.org/packages/source/s/sos-julia/sos_julia-${{ version }}.tar.gz
+  sha256: e2cc7b88756ea0639bb24b6750bdd02de61d801bfcc1f90afbe39fca2c5a2afc
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
